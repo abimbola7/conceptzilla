@@ -17,7 +17,6 @@ const Header = () => {
         start : "top top",
         end : `+=${container.current.clientHeight}`,
         scrub : 2,
-        markers : true,
         // pin : true
       }
     })
