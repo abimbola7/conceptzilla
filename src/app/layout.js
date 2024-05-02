@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`min-h-[200vh]`}>
+      <body className={`min-h-screen`}>
         <MouseProvider>
           {children}
         </MouseProvider>

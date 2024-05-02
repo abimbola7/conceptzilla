@@ -31,7 +31,7 @@ const MouseProvider = ({ children }) => {
     ref={app}
     onMouseMove={moveShape}
     >
-      <div className="flair w-5 h-5 rounded-full fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 backdrop-invert z-[1000] pointer-events-none"/>
+      <div className="flair w-5 h-5 rounded-full fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 backdrop-invert z-[100000] pointer-events-none"/>
       { children }
     </div>
   )
