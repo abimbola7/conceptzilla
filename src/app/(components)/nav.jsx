@@ -4,6 +4,7 @@ import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { londrina_solid } from '../fonts'
 import Button from './ui/button'
+import Link from 'next/link'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -38,21 +39,21 @@ const Nav = ({ timeline }) => {
        >
         <h1 className='font-bold text-2xl uppercase tracking-widest'>ConceptVilla</h1>
         <ul className='flex items-center justify-around uppercase text-xl font-light flex-1'>
-          <li className=''>
+          <Link href="/" className='cursor-pointer'>
             how it&apos;s done
-          </li>
-          <li>
+          </Link>
+          <Link href="" className='cursor-pointer'>
             <div
             className='list1'
             >
               RECENT CONCEPTS
             </div>
-          </li>
-          <li>
+          </Link>
+          <Link href="" className='cursor-pointer'>
             <div className='list2'>
               faq
             </div>
-          </li>
+          </Link>
           <li>
             <Button 
             title={"Order a Concept"}

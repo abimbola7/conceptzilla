@@ -8,22 +8,33 @@ const MouseProvider = ({ children }) => {
   const app = React.useRef();
   const xTo = React.useRef();
   const yTo = React.useRef();
+  const [ mouseState, setMouseState ] = React.useState(null)
   const { context, contextSafe } = useGSAP(()=>{
     xTo.current = gsap.quickTo(".flair", "x", {
-      duration : 1,
-      ease : "power2"
+      duration : .5,
+      ease : "power2",
+      // scale : mouseState ? 2 : 1
+      
     });
     yTo.current = gsap.quickTo(".flair", "y", {
-      duration : 1,
+      duration : .5,
       ease : "power2"
     })
+    gsap.to(".flair", {
+      scale : mouseState ? 3 : 1
+    })
   }, {
-    scope : app
+    scope : app,
+    dependencies : [mouseState]
   })
   
   const moveShape = contextSafe((e)=>{
     xTo.current(e.clientX)
     yTo.current(e.clientY)
+    const { target } = e;
+    const targetClosest = target?.closest("a") || target?.closest("button")
+    setMouseState(targetClosest)
+    // console.log(targetClosest)
   })
   return (
     <div 
