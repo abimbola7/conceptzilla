@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.svg {
+  background-image: url(/images/lines.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40rem;
+}

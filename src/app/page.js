@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Header from "./(components)/header";
 import HeroVideo from "./(components)/herovideo";
+import Offer from "./(components)/offer";
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <>
       <Header />
       <HeroVideo />
+      <Offer />
     </>
   );
 }

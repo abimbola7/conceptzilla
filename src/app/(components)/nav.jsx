@@ -36,8 +36,8 @@ const Nav = ({ timeline }) => {
        className='max-w-[95%] mx-auto flex items-center justify-between space-x-10'
        ref={container}
        >
-        <h1 className='font-bold text-2xl uppercase'>ConceptVilla</h1>
-        <ul className='flex items-center justify-around uppercase text-xl font-normal flex-1'>
+        <h1 className='font-bold text-2xl uppercase tracking-widest'>ConceptVilla</h1>
+        <ul className='flex items-center justify-around uppercase text-xl font-light flex-1'>
           <li className=''>
             how it&apos;s done
           </li>

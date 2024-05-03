@@ -3,14 +3,13 @@ import React from 'react'
 
 const HeroVideo = () => {
   return (
-    <div className='w-full h-[150vh] border border-red-500'>
+    <div className='w-full h-[150vh]'>
       <video 
-      // controls
       autoPlay
       loop
       src="/videos/conceptvilla2.mp4"
       type="video/mp4"
-      className='w-full object-cover h-full'
+      className='w-full object-cover h-full bg-[50%] object-center aspect-video'
       height={"3500px"}
       />
     </div>
