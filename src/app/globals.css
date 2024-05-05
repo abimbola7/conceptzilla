@@ -8,3 +8,7 @@
   background-position: center;
   background-size: 50rem;
 }
+
+button, a { 
+  cursor: none;
+}

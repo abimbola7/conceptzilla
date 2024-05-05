@@ -8,6 +8,7 @@ import Lenis from "@studio-freight/lenis";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import Result from "./(components)/result";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -44,6 +45,7 @@ export default function Home() {
       <Header />
       <HeroVideo />
       <Offer />
+      <Result />
     </>
   );
 }

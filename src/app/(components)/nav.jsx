@@ -39,17 +39,17 @@ const Nav = ({ timeline }) => {
        >
         <h1 className='font-bold text-2xl uppercase tracking-widest'>ConceptVilla</h1>
         <ul className='flex items-center justify-around uppercase text-xl font-light flex-1'>
-          <Link href="/" className='cursor-pointer'>
+          <Link href="/" className=''>
             how it&apos;s done
           </Link>
-          <Link href="" className='cursor-pointer'>
+          <Link href="" className=''>
             <div
             className='list1'
             >
               RECENT CONCEPTS
             </div>
           </Link>
-          <Link href="" className='cursor-pointer'>
+          <Link href="" className=''>
             <div className='list2'>
               faq
             </div>
