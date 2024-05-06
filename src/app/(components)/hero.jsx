@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className={`text-2xl text-white font-bold px-5 pt-36 pb-20 ${londrina.className} max-w-7xl mx-auto flex flex-col lg:flex-row lg:justify-between lg:space-x-6 space-y-20 lg:space-y-0`}>
       <div className="text-7xl uppercase max-w-2xl lg:max-w-full lg:w-3/5">
-        <p className='leading-none'>
+        <p className='leading-none tracking-wider'>
           presentation-ready {" "}
           <span className={`inline-block ${londrina_solid.className}`}>
             concepts
