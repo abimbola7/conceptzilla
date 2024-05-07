@@ -9,6 +9,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import Result from "./(components)/result";
+import Recent from "./(components)/recent";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -46,6 +47,7 @@ export default function Home() {
       <HeroVideo />
       <Offer />
       <Result />
+      <Recent />
     </>
   );
 }
