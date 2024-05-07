@@ -1,0 +1,21 @@
+.star{
+  /* transition: all 1s ease; */
+  /* rotate: 30deg; */
+  /* transform: rotateY(720deg); */
+  /* transform: rotate3d(2, -1, -1, -0.2turn); */
+  /* transform-origin: 0%; */
+  /* transform: rotate3d(0, 1, 0, 90deg); */
+  animation: 3s infinite linear slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: rotateY(0deg);
+    transform-origin: center bottom;
+  }
+  
+  to {
+    /* transform-origin: center bottom; */
+    transform: rotateY(deg);
+  }
+}

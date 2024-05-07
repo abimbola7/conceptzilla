@@ -38,7 +38,7 @@ const Nav = ({ timeline }) => {
        ref={container}
        >
         <h1 className='font-bold text-2xl uppercase tracking-widest'>ConceptVilla</h1>
-        <ul className='flex items-center justify-around uppercase text-xl font-light flex-1'>
+        <ul className='hidden md:flex items-center justify-around uppercase text-xl font-light flex-1'>
           <Link href="/" className=''>
             how it&apos;s done
           </Link>

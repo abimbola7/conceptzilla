@@ -7,7 +7,7 @@ const Result = () => {
   return (
     <div className='w-full min-h-screen bg-customBlack'>
       <div className='max-w-4xl tab:max-w-[90rem] w-full h-full mx-auto flex flex-col tab:flex-row gap-x-4 gap-y-20'>
-        <div className={`py-2 px-8 flex flex-col space-y-12 tab:space-y-20 tab:w-[33%] max-w-[35rem] tab:max-w-full`}>
+        <div className={`py-2 px-8 flex flex-col space-y-12 tab:space-y-20 tab:w-[33%] max-w-[35rem] tab:max-w-full h-full`}>
           <h2 className={`${londrina_solid.className} text-7xl uppercase text-white tab:tracking-wider`}>
             <span className={londrina.className}>what you&apos;ll</span> 
             {" "} get {" "}

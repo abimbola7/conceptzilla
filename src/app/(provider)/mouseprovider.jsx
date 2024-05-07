@@ -11,7 +11,7 @@ const MouseProvider = ({ children }) => {
   const [ mouseState, setMouseState ] = React.useState(null)
   const { context, contextSafe } = useGSAP(()=>{
     xTo.current = gsap.quickTo(".flair", "x", {
-      duration : .5,
+      duration : .4,
       ease : "power2",
       // scale : mouseState ? 2 : 1
       
