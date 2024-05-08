@@ -2,7 +2,9 @@
 import React from 'react'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { londrina_solid } from '../fonts';
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
+import { TiArrowRightOutline } from 'react-icons/ti';
 
 const MouseProvider = ({ children }) => {
   const app = React.useRef();
@@ -23,10 +25,20 @@ const MouseProvider = ({ children }) => {
 
     !divState && gsap.to(".flair", {
       scale : mouseState ? 3 : 1
+      // width : mouseState ? "40px" : "20px",
+      // height : mouseState ? "40px" : "20px",
     })
-
+    
     !mouseState && gsap.to(".flair", {
-      scale : divState ? 5 : 1
+      // width : divState ? "100px" : "20px",
+      // height : divState ? "100px" : "20px",
+      scale : divState ? 6 : 1
+    })
+    
+    !mouseState && gsap.to(".p", {
+      scale : .3,
+      opacity : divState ? 1 : 0,
+      duration : .2
     })
   }, {
     scope : app,
@@ -45,11 +57,15 @@ const MouseProvider = ({ children }) => {
   })
   return (
     <div 
-    className="w-full min-h-screen"
+    className={`w-full min-h-screen ${londrina_solid.className}`}
     ref={app}
     onMouseMove={moveShape}
     >
-      <div className="flair w-5 h-5 rounded-full fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 mix-blend-difference bg-yellow-500 z-[100000] pointer-events-none"/>
+      <div className="flair w-5 h-5 rounded-full fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 mix-blend-difference bg-yellow-500 z-[100000] pointer-events-none text-center flex items-center justify-center">
+        <span className='uppercase  font-medium transition p text-[8px]'>
+           i need similar
+        </span>
+      </div>
       { children }
     </div>
   )
