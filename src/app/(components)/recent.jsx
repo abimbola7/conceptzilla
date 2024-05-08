@@ -3,6 +3,11 @@ import { londrina_solid, londrina } from '../fonts'
 import { TiArrowRightOutline } from 'react-icons/ti'
 
 const Recent = () => {
+  React.useEffect(()=>{
+    window.onload = function(){
+      document.querySelector(".vid").play()
+    }
+  }, [])
   return (
     <div className='bg-customBlack min-h-screen w-full pt-48 pb-48'>
       <div className='max-w-[90rem] w-full mx-auto'>
@@ -17,14 +22,17 @@ const Recent = () => {
         <div className='w-full mt-5 h-screen flex flex-row gap-x-40'>
           <div className='border w-[40%] h-full'></div>
           <div className='video1 w-[60%] flex flex-col space-y-5' id='video1'>
-            <video 
-            type="video/mp4"
-            src="/videos/crypto.mp4" 
-            muted 
-            loop 
+            <video
+            muted
+            loop
             autoplay 
-            className='w-full object-cover h-[100vh] bg-[50%] object-center aspect-video'
-            />
+            playsInline
+            preload='metadata'
+            // controls
+            className='w-full object-cover h-[100vh] bg-[50%] object-center vid aspect-video'
+            >
+              <source src='https://dl.dropboxusercontent.com/scl/fi/mo8657tqu0fgdi7rt9e8u/crypto.mp4?rlkey=6jwihpwf1e3hwn91qs11eb61o&dl=0' type="video/mp4"/>
+            </video>
 
             <div className={`space-y-8 ${londrina_solid.className}`}>
               <p>
