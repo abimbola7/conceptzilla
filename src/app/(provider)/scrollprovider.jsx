@@ -15,7 +15,7 @@ export default function ScrollProvider({ children }) {
     <ReactLenis
     root
     options={{
-      lerp : 0.1,      
+      lerp : 0.05,      
       duration : 6,
       smoothWheel : true,
       smooth : true

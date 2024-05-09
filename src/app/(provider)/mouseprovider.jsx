@@ -3,8 +3,6 @@ import React from 'react'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { londrina_solid } from '../fonts';
-import ScrollTrigger from "gsap-trial/ScrollTrigger";
-import { TiArrowRightOutline } from 'react-icons/ti';
 
 const MouseProvider = ({ children }) => {
   const app = React.useRef();
@@ -56,6 +54,7 @@ const MouseProvider = ({ children }) => {
   return (
     <div 
     className={`w-full min-h-screen ${londrina_solid.className}`}
+    onMouse
     ref={app}
     onMouseMove={moveShape}
     >

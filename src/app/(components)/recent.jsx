@@ -6,8 +6,8 @@ import Image from 'next/image'
 const Recent = () => {
   return (
     <div className='bg-customBlack min-h-screen w-full pt-48 pb-48'>
-      <div className='max-w-[90rem] w-full mx-auto'>
-        <h2 className={`${londrina_solid.className} text-7xl uppercase tab:tracking-wider text-white leading-[4rem]`}>
+      <div className='max-w-[90rem] w-full mx-auto px-5'>
+        <h2 className={`${londrina_solid.className} text-5xl md:text-7xl uppercase tab:tracking-wider text-white leading-[2rem] md:leading-[4rem]`}>
           <span className={`${londrina.className} block`}>
             recent {" "} 
             <TiArrowRightOutline className='inline-block mb-2' />
@@ -15,15 +15,15 @@ const Recent = () => {
           cases
         </h2>
 
-        <div className='w-full mt-5 h-full min-h-screen flex flex-row gap-x-40 px-5 items-end'>
-          <div className='w-[40%] h-full flex flex-col justify-end text-white space-y-5 video1'>
+        <div className='w-full mt-20 md:mt-5 h-full min-h-screen flex flex-col md:flex-row gap-40 md:gap-20 tab:gap-40 items-end'>
+          <div className='w-full md:w-1/2 tab:w-[40%] h-full flex flex-col justify-end text-white space-y-5 video1'>
             <h1 className='text-[25px] tracking-widest font-light text-[#ffffff] capitalize'>
               Car rental service mobile app
             </h1>
             <Image
             src={"https://assets-global.website-files.com/62bac7754ea6d7967db80305/65d6f561319e991e647f8f0d_cz-image-01-p-500.webp"}
-            width={400}
-            height={400}
+            width={1000}
+            height={1000}
             alt='img'
             quality={100}
             />
@@ -37,7 +37,7 @@ const Recent = () => {
               <li className={`list`}> Development-ready assets</li>
           </ul>
           </div>
-          <div className='video1 w-[60%] flex flex-col space-y-5' id='video1'>
+          <div className='video1 w-full md:w-1/2 tab:w-[60%] flex flex-col space-y-5' id='video1'>
             <h1 className='text-[25px] tracking-widest font-light text-[#ffffff] capitalize'>
               Cryptocurrency exchange website & mobile app
             </h1>
