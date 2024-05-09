@@ -13,7 +13,6 @@ const MouseProvider = ({ children }) => {
   const [ divState, setDivState ] = React.useState(null)
   const [ mouseState, setMouseState ] = React.useState(null)
   const { context, contextSafe } = useGSAP(()=>{
-    console.log(divState)
     xTo.current = gsap.quickTo(".flair", "x", {
       duration : .4,
       ease : "power2",
@@ -23,19 +22,18 @@ const MouseProvider = ({ children }) => {
       ease : "power2"
     })
 
-    !divState && gsap.to(".flair", {
+    !divState && 
+    gsap.to(".flair", {
       scale : mouseState ? 3 : 1
-      // width : mouseState ? "40px" : "20px",
-      // height : mouseState ? "40px" : "20px",
     })
     
-    !mouseState && gsap.to(".flair", {
-      // width : divState ? "100px" : "20px",
-      // height : divState ? "100px" : "20px",
+    !mouseState && 
+    gsap.to(".flair", {
       scale : divState ? 6 : 1
     })
     
-    !mouseState && gsap.to(".p", {
+    !mouseState && 
+    gsap.to(".p", {
       scale : .3,
       opacity : divState ? 1 : 0,
       duration : .2
@@ -49,7 +47,7 @@ const MouseProvider = ({ children }) => {
   const moveShape = contextSafe((e)=>{
     xTo.current(e.clientX)
     yTo.current(e.clientY)
-    const { target } = e;
+    const { target } = e;     
     const targetClosest = target?.closest("a") || target?.closest("button")
     const divClosest = target?.closest(".video1")
     setMouseState(targetClosest);
