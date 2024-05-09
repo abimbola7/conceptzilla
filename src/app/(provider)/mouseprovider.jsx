@@ -41,7 +41,27 @@ const MouseProvider = ({ children }) => {
     dependencies : [mouseState, divState]
   })
   
-  
+  function detectMob() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+    ];
+    
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+  }
+
+  React.useEffect(()=>{
+    detectMob()  
+  }, [])
+
+
   const moveShape = contextSafe((e)=>{
     xTo.current(e.clientX)
     yTo.current(e.clientY)
@@ -58,7 +78,7 @@ const MouseProvider = ({ children }) => {
     ref={app}
     onMouseMove={moveShape}
     >
-      <div className="flair w-5 h-5 rounded-full fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 mix-blend-difference bg-yellow-500 z-[100000] pointer-events-none text-center flex items-center justify-center">
+      <div className={`flair w-5 h-5 rounded-full fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 mix-blend-difference bg-yellow-500 z-[100000] pointer-events-none text-center items-center justify-center flex ${detectMob() ? "invisible" : "visible"}`}>
         <span className='uppercase  font-medium transition p text-[8px]'>
            i need similar
         </span>
