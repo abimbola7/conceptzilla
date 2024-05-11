@@ -1,10 +1,28 @@
+"use client"
 import React from 'react'
 import { londrina_solid, londrina } from '../fonts'
 import { TiArrowRightOutline } from 'react-icons/ti'
 import Image from 'next/image'
 import Grid from './ui/grid'
 
+
+
 const Recent = () => {
+  const [ content, setContent ] = React.useState([])
+  const getCases = async () => {
+    const res = await fetch("/content/content.json")
+    const content = await res.json()
+    return content
+  }
+  
+  React.useEffect(()=>{
+    getCases().then((data)=>{
+      console.log(data)
+      setContent(data)
+    })
+  }, [])
+
+  console.log(content)
   return (
     <div className='bg-customBlack min-h-screen w-full pt-48 pb-48'>
       <div className='max-w-[90rem] w-full mx-auto px-5'>
@@ -16,30 +34,14 @@ const Recent = () => {
           cases
         </h2>
         <div className='flex flex-col space-y-40'>
-          <Grid
-          title={""}
-          key={""}
-          content={""}
-          position={"normal"}
-          imageSrc={"https://assets-global.website-files.com/62bac7754ea6d7967db80305/65d6f561319e991e647f8f0d_cz-image-01-p-500.webp"}
-          videoSrc={'https://dl.dropboxusercontent.com/scl/fi/mo8657tqu0fgdi7rt9e8u/crypto.mp4?rlkey=6jwihpwf1e3hwn91qs11eb61o&dl=0'}
-          />
-          <Grid 
-          title={""}
-          key={""}
-          content={""}
-          position={"reverse"}
-          imageSrc={"https://assets-global.website-files.com/62bac7754ea6d7967db80305/65d6f561319e991e647f8f0d_cz-image-01-p-500.webp"}
-          videoSrc={'https://dl.dropboxusercontent.com/scl/fi/mo8657tqu0fgdi7rt9e8u/crypto.mp4?rlkey=6jwihpwf1e3hwn91qs11eb61o&dl=0'}
-          />
-          <Grid 
-          title={""}
-          key={""}
-          content={""}
-          position={"reverse"}
-          imageSrc={"https://assets-global.website-files.com/62bac7754ea6d7967db80305/65d6f561319e991e647f8f0d_cz-image-01-p-500.webp"}
-          videoSrc={'https://dl.dropboxusercontent.com/scl/fi/mo8657tqu0fgdi7rt9e8u/crypto.mp4?rlkey=6jwihpwf1e3hwn91qs11eb61o&dl=0'}
-          />
+          {
+            content?.map(item=>(
+              <Grid 
+              key={item.id}
+              content={item}
+              />
+            ))
+          }
         </div>
       </div>
     </div>

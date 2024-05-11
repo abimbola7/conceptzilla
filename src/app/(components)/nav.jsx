@@ -31,7 +31,7 @@ const Nav = ({ timeline }) => {
   
   return (
     <nav 
-    className={`w-full py-5 text-white fixed top-0 left-0 -z-2 backdrop-blur-2xl ${londrina_solid.className} tracking-widest bg-customBlack bg-opacity-45`}
+    className={`w-full py-5 text-white fixed top-0 left-0 z-[10] backdrop-blur-2xl ${londrina_solid.className} tracking-widest bg-customBlack bg-opacity-45`}
     >
       <div
        className='max-w-[95%] mx-auto flex items-center justify-between space-x-10'

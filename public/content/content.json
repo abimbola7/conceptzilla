@@ -1,0 +1,115 @@
+[
+  {
+    "id" : 1,
+    "image" : {
+      "url" : "https://assets-global.website-files.com/62bac7754ea6d7967db80305/65d6f561319e991e647f8f0d_cz-image-01-p-800.webp",
+      "title" : "car rental service mobile app",
+      "description" : "Developed a concept for a car rental mobile app, allowing users to book vehicles across the world hassle-free. The filtering system assists in finding a suitable car quickly.",
+      "features" : [
+        "Design for 4 main screens",
+        "Presentation-ready asset",
+        "Ready for development"
+      ]
+    },
+    "video" : {
+      "url" : "https://dl.dropboxusercontent.com/scl/fi/mo8657tqu0fgdi7rt9e8u/crypto.mp4?rlkey=6jwihpwf1e3hwn91qs11eb61o&dl=0",
+      "title" : "cryptocurrency exchange website & mobile app",
+      "description" : "Designed a cryptocurrency exchange mobile  app and it's promo landing page for improved marketing strategies. The design has the clarity and ease of use that people seel in trading apps",
+      "features" : [
+        "5 main screens for mobile app",
+        "promotional landing page",
+        "preseantation-ready animation",
+        "development-ready assets"
+      ]
+      
+    },
+    "styling" : {
+      "flex" : "normal",
+      "items" : "end"
+    }
+  },
+  {
+    "id" : 2,
+    "image" : {
+      "url" : "https://assets-global.website-files.com/62bac7754ea6d7967db80305/65d6f5617a251c34e687797a_cz-image-02-p-800.webp",
+      "title" : "cargo delivery company website",
+      "description" : "Created a website design for a cargo delivery company with a focus on worldwide shipment. The minimalistic approach helps the clients submit the information and estimate the delivery.",
+      "features" : [
+        "Web design concept",
+        "Presentation-ready visuals",
+        "Developement-ready UI kit"
+      ]
+    },
+    "video" : {
+      "url" : "https://dl.dropboxusercontent.com/scl/fi/e510tyz4a6okgrw8qzvrj/cybervpn.mp4?rlkey=6rx1m5jjslcgr190ihkg0a3og&dl=0",
+      "title" : "cyber VPN mobile app design concept",
+      "description" : "Built a VPN mobile app design with a touch of cyberpunk and sci-fi styles. Dark aesthetics reduce eye strain, while users enjoy fast internet connections",
+      "features" : [
+        "5 main screens for mobile app",
+        "Promotional landing page",
+        "Presentation-ready animation",
+        "Development-ready assets"
+      ] 
+    },
+    "styling" : {
+      "flex" : "reverse",
+      "items" : "start"
+    }
+  },
+  {
+    "id" : 3,
+    "image" : {
+      "url" : "https://assets-global.website-files.com/62bac7754ea6d7967db80305/65d6f5618eaef9775aef16e4_cz-image-03-p-800.webp",
+      "title" : "flight tickets booking mobile app",
+      "description" : "Designed a mobile app concept for booking flight tickets on the go. Quick and easy purchase with glanceable data representation",
+      "features" : [
+        "6 main screens for mobile app",
+        "Presentation-ready assets",
+        "Development-ready assets"
+      ]
+    },
+    "video" : {
+      "url" : "https://dl.dropboxusercontent.com/scl/fi/ad642y05wplawy614c913/alloy.mp4?rlkey=k7go6lqkx1io54ntr2wx05p81&dl=0",
+      "title" : "intelligent contact manager product dashboard",
+      "description" : "Developed a design for an intelligent contact manager that helps busy professional streamline their workflow and boost their productivity.",
+      "features" : [
+        "Contact manager dashboard",
+        "Design for mobile widgets",
+        "development-ready assets",
+        "Presentation-ready animation"
+      ]
+    },
+    "styling" : {
+      "flex" : "normal",
+      "items" : "start"
+    }
+  },
+  {
+    "id" : 4,
+    "image" : {
+      "url" : "https://assets-global.website-files.com/62bac7754ea6d7967db80305/65d6f56177312dc222c4637b_cz-image-04-p-800.webp",
+      "title" : "esport analytics dashboard",
+      "description" : "Created a web dashboard for Esports and gaming industry analytics. It clearly shows statistics and makes all crucial info glanceable",
+      "features" : [
+        "Design for dashboard's main screen",
+        "Presentation-ready visuals",
+        "Development-ready assets"
+      ]
+    },
+    "video" : {
+      "url" : "https://dl.dropboxusercontent.com/scl/fi/cfht2cgdybr03j3c66uxf/nocode.mp4?rlkey=kojid053d13jxeda1g7zc5bd1&dl=0",
+      "title" : "no code constructor design concept",
+      "description" : "Built a no-code constructor design concept that is clear and easy to grasp for people without any technical knowledge. All essential tools are at the user's fingertips",
+      "features" : [
+        "Design for 4 main screens",
+        "Ready for MVP implementation",
+        "Presentation-ready asset with animation",
+        "Development-ready assets"
+      ]      
+    },
+    "styling" : {
+      "flex" : "reverse",
+      "items" : "start"
+    }
+  }
+]

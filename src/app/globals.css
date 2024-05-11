@@ -15,7 +15,7 @@ button, a {
 
 @layer components {
   .list {
-    @apply before:absolute before:w-[17px] before:h-[10px] before:bg-white before:rounded-[100%] ml-8 before:top-[7px] before:-left-[27px] relative
+    @apply before:absolute z-[1] before:w-[17px] before:h-[10px] before:bg-white before:rounded-[100%] ml-8 before:top-[7px] before:-left-[27px] relative
   }
   .text {
     @apply text-lg tracking-widest font-light
