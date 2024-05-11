@@ -62,7 +62,7 @@ const MouseProvider = ({ children }) => {
     xTo.current(e.clientX)
     yTo.current(e.clientY)
     const { target } = e;     
-    const targetClosest = target?.closest("a") || target?.closest("button")
+    const targetClosest = target?.closest("a") || target?.closest("button") || target?.closest(".circle")
     const divClosest = target?.closest(".video1")
     setMouseState(targetClosest);
     setDivState(divClosest);
