@@ -46,7 +46,7 @@ const Recent = () => {
           }
         </div>
 
-        <div className="pt-20 space-y-6">
+        <div className="pt-20 space-y-6 w-full ">
           <div className='text-white text-xl tracking-widest font-light'>
             <p>That&apos;s merely a snippet of our recent projects.</p>
             <p>You can visit Dribble and explore our most current work there.</p>  

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Timeline = () => {
   return (
-    <div>
+    <div className='w-full min-h-screen bg-customBlack'>
       
     </div>
   )
