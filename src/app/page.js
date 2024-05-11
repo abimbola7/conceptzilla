@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import Result from "./(components)/result";
 import Recent from "./(components)/recent";
+import Timeline from "./(components)/timeline";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -48,6 +49,7 @@ export default function Home() {
       <Offer />
       <Result />
       <Recent />
+      <Timeline />
     </>
   );
 }

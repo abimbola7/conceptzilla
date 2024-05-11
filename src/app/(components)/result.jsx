@@ -49,7 +49,6 @@ const Result = () => {
             key={4}/>  
           </div>
         </div>
-        
       </div>
     </div>
   )

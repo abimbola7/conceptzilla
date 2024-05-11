@@ -4,6 +4,8 @@ import { londrina_solid, londrina } from '../fonts'
 import { TiArrowRightOutline } from 'react-icons/ti'
 import Image from 'next/image'
 import Grid from './ui/grid'
+import Button from './ui/button'
+import { CiBasketball } from "react-icons/ci";
 
 
 
@@ -42,6 +44,18 @@ const Recent = () => {
               />
             ))
           }
+        </div>
+
+        <div className="pt-20 space-y-6">
+          <div className='text-white text-xl tracking-widest font-light'>
+            <p>That&apos;s merely a snippet of our recent projects.</p>
+            <p>You can visit Dribble and explore our most current work there.</p>  
+          </div>
+          <Button 
+          icon={true}
+          title={"View on Dribble"}
+          color={"#000"}
+          className="bg-[#F4C644] text-2xl rounded-full py-5 px-8 normal-case text-black font-normal w-fit"/>
         </div>
       </div>
     </div>
