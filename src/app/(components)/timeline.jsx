@@ -39,8 +39,8 @@ const Timeline = () => {
   return (
     <div className='w-full min-h-screen bg-customBlack' ref={container}>
       <div className='w-full flex items-center justify-between px-10'>
-        <div className='w-full max-w-2xl'>
-          <h2 className={`${londrina_solid.className} text-7xl uppercase text-white tab:tracking-wider`}>
+        <div className='w-full max-w-md md:max-w-[39rem] lg:max-w-2xl'>
+          <h2 className={`${londrina_solid.className} text-5xl md:text-7xl uppercase text-white tab:tracking-wider`}>
             <span className={londrina.className}>just</span> 
             {" "} one week {" "}
             <span className={londrina.className}>from</span>{" "}
@@ -53,7 +53,7 @@ const Timeline = () => {
         <div 
         onMouseEnter={mouseEnter}
         onMouseLeave={mouseLeave}
-        className='w-40 h-40 border-2 text-[#F4C644] border-[#F4C644] flex items-center justify-center text-center text-2xl font-normal  circle flex-col tracking-wider hover:text-customBlack relative overflow-hidden rounded-full'>
+        className='w-32 h-32 md:w-40 md:h-40 border-2 text-[#F4C644] border-[#F4C644] hidden sm:flex items-center justify-center text-center text-2xl font-normal  circle flex-col tracking-wider hover:text-customBlack relative overflow-hidden rounded-full'>
           <div className='absolute top-0 abs left-0 w-full h-full bg-[#F4C644] z-2'></div>
           <span className='relative z-3'>
             <TiArrowLeft className='inline-block mb-1' /> {" "} GET <TiArrowRight className='inline-block mb-1' />

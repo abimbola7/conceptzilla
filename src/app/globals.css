@@ -20,4 +20,7 @@ button, a {
   .text {
     @apply text-lg tracking-widest font-light
   }
+  .diamond {
+    @apply border-b-2 border-b-[#504E49] py-12 border-dotted before:absolute before:w-5 before:h-5 before:bg-yellow-500 before:-bottom-[9.5px] before:left-0 relative before:rotate-[50deg] before:skew-x-12
+  }
 }
