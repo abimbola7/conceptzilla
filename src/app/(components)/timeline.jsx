@@ -5,16 +5,17 @@ import { TiArrowRightOutline } from 'react-icons/ti'
 import { TiArrowLeft, TiArrowRight } from "react-icons/ti";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import Tl from './tl';
 
 const Timeline = () => {
   const container = React.useRef();
   const { context, contextSafe } = useGSAP(()=>{
     gsap.defaults({
-      duration : .3,
-      ease : "none"
+      duration : .5,
+      ease : "power2.out"
     })
     gsap.to(".abs", {
-      xPercent : 100
+      xPercent : -100
     })
   }, {
     scope : container
@@ -22,13 +23,15 @@ const Timeline = () => {
 
   const mouseEnter = contextSafe(()=>{
     gsap.to(".abs", {
-      xPercent : 0
+      xPercent : 0,
+      // borderRadius : "100%",
     })
   })
 
   const mouseLeave = contextSafe(()=>{
     gsap.to(".abs", {
-      xPercent : -100
+      xPercent : -100,
+      // borderRadius : "50%"
     })
   })
 
@@ -50,7 +53,7 @@ const Timeline = () => {
         <div 
         onMouseEnter={mouseEnter}
         onMouseLeave={mouseLeave}
-        className='w-36 h-36 border-2 text-[#F4C644] border-[#F4C644] flex items-center justify-center text-center text-xl font-normal  circle flex-col tracking-wider hover:text-customBlack relative overflow-hidden rounded-full'>
+        className='w-40 h-40 border-2 text-[#F4C644] border-[#F4C644] flex items-center justify-center text-center text-2xl font-normal  circle flex-col tracking-wider hover:text-customBlack relative overflow-hidden rounded-full'>
           <div className='absolute top-0 abs left-0 w-full h-full bg-[#F4C644] z-2'></div>
           <span className='relative z-3'>
             <TiArrowLeft className='inline-block mb-1' /> {" "} GET <TiArrowRight className='inline-block mb-1' />
@@ -58,6 +61,7 @@ const Timeline = () => {
           <span className='block relative z-3'>STARTED</span>
         </div>
       </div>
+      <Tl />
     </div>
   )
 }
