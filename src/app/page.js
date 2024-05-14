@@ -11,6 +11,8 @@ import gsap from "gsap";
 import Result from "./(components)/result";
 import Recent from "./(components)/recent";
 import Timeline from "./(components)/timeline";
+import Rules from "./(components)/rules";
+import Addons from "./(components)/addons";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -50,6 +52,8 @@ export default function Home() {
       <Result />
       <Recent />
       <Timeline />
+      <Rules />
+      <Addons />
     </>
   );
 }

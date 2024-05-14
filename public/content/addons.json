@@ -1,0 +1,58 @@
+[
+  {
+    "title" : "Pitch deck",
+    "description" : "We will write and design an engaging presentation of your concept for your key audience.",
+    "est_time" : "1 week",
+    "price" : 1500,
+    "premium" : true
+  },
+  {
+    "title" : "Branding",
+    "description" : "We will create a lower-end branding package including a logo, typographical pair, and a set of brand colors.",
+    "est_time" : "3-5 days",
+    "price" : 1500,
+    "premium" : false
+  },
+  {
+    "title" : "Webflow implementation",
+    "description" : "The concept will be developed by our team on Webflow.",
+    "est_time" : "2-3 weeks",
+    "price" : 3000,
+    "premium" : false
+  },
+  {
+    "title" : "Extended concept",
+    "description" : "We will increase the number of screens to cover more features. Works for larger scale-up concepts.",
+    "est_time" : "2 days",
+    "price" : 1000,
+    "premium" : false
+  },
+  {
+    "title" : "Graphics",
+    "description" : "We will create custom smaller-scale illustrations or icons to support the design assets across the page.",
+    "est_time" : "1 day",
+    "price" : 500,
+    "premium" : false
+  },
+  {
+    "title" : "Dark/Light theme",
+    "description" : "We will design a contrasting dark or light extra theme for the initial set of screens.",
+    "est_time" : "1 day",
+    "price" : 500,
+    "premium" : false
+  },
+  {
+    "title" : "Revision",
+    "description" : "We will introduce an intermediary design hand-off for you to suggest specific changes if required.",
+    "est_time" : "1 day",
+    "price" : 500,
+    "premium" : false
+  },
+  {
+    "title" : "Responsive",
+    "description" : "We will create versions of the concepts for different screen sizes. Included by default in the Webflow inplementation add-on.",
+    "est_time" : "1 day",
+    "price" : 500,
+    "premium" : false
+  }
+]

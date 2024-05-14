@@ -13,11 +13,11 @@ const MouseProvider = ({ children }) => {
   const [ mouseState, setMouseState ] = React.useState(null)
   const { context, contextSafe } = useGSAP(()=>{
     xTo.current = gsap.quickTo(".flair", "x", {
-      duration : .4,
+      duration : .2,
       ease : "power2",
     });
     yTo.current = gsap.quickTo(".flair", "y", {
-      duration : .5,
+      duration : .2,
       ease : "power2"
     })
 

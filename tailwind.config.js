@@ -6,6 +6,10 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    backgroundPosition : {
+      'position1' : '140% 0%',
+      'position2' : '',
+    },
     screens:{
       'xs' : '480px',
       
