@@ -10,6 +10,7 @@ const MouseProvider = ({ children }) => {
   const yTo = React.useRef();
   const [ mobileMode, setMobileMode ] = React.useState(true);
   const [ divState, setDivState ] = React.useState(null)
+  const [ rulesState, setRulesState ] = React.useState(null);
   const [ mouseState, setMouseState ] = React.useState(null)
   const { context, contextSafe } = useGSAP(()=>{
     xTo.current = gsap.quickTo(".flair", "x", {
@@ -64,6 +65,8 @@ const MouseProvider = ({ children }) => {
     const { target } = e;     
     const targetClosest = target?.closest("a") || target?.closest("button") || target?.closest(".circle")
     const divClosest = target?.closest(".video1")
+    const rulesClosest = target?.closest(".rules")
+    setRulesState(rulesClosest)
     setMouseState(targetClosest);
     setDivState(divClosest);
   })
@@ -76,7 +79,9 @@ const MouseProvider = ({ children }) => {
     >
       <div className={`flair w-5 h-5 rounded-full fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 mix-blend-difference bg-yellow-500 z-[100000] pointer-events-none text-center items-center justify-center flex ${mobileMode ? 'invisible' : 'visible'}`}>
         <span className='uppercase  font-medium transition p text-[8px]'>
-           i need similar
+           {
+            rulesState ? "order a concept" : "i want similar"
+           }
         </span>
       </div>
       { children }
