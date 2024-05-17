@@ -35,4 +35,7 @@ button, a {
   .diamond {
     @apply border-b-2 border-b-[#504E49] py-12 font-light text-white px-2 border-dotted before:absolute before:w-5 before:h-5 before:bg-yellow-500 before:-bottom-[9.5px] before:left-0 relative before:rotate-[50deg] before:skew-x-12 space-y-3 tracking-wider
   }
+  .input {
+    @apply flex-1 bg-[#1A1919] py-4 rounded-3xl focus:outline-none px-5  placeholder:font-light transition-all duration-200 outline-none border-none focus:border-none focus:ring-0 focus:rounded-b-none placeholder:text-[#9A998C]
+  }
 }

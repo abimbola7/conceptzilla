@@ -8,9 +8,9 @@ import Form from './ui/form'
 const Contact = () => {
   return (
     <div className={`w-full px-3 py-32 text-white ${londrina_solid.className} mt-40 min-h-screen`}>
-      <div className='flex flex-col tab:flex-row max-w-3xl tab:max-w-7xl mx-auto gap-y-20 tab:space-x-24'>
-        <div className='w-full tab:w-[35%] flex flex-col space-y-16'>
-          <h1 className={`${londrina_solid.className} text-7xl tracking-wide`}>
+      <div className='flex flex-col tab:flex-row max-w-3xl tab:max-w-7xl mx-auto gap-y-10 sm:gap-y-20 tab:space-x-24'>
+        <div className='w-full tab:w-[35%] flex flex-col space-y-10 tab:space-y-16'>
+          <h1 className={`${londrina_solid.className} text-5xl tab:text-7xl tracking-wide`}>
             <span className={`block`}>
             DROP <TiArrowRightOutline className='inline-block mb-2' />
             </span>

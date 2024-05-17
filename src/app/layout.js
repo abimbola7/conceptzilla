@@ -3,6 +3,7 @@ import "./globals.css";
 import MouseProvider from "./(provider)/mouseprovider";
 import ScrollProvider from "./(provider)/scrollprovider";
 import { Inter } from "next/font/google";
+import Footer from "./(components)/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <ScrollProvider>
           <MouseProvider>
             {children}
+            <Footer />
           </MouseProvider>
         </ScrollProvider>
       </body>

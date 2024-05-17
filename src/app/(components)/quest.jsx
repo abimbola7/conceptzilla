@@ -38,7 +38,7 @@ const Quest = ({ item, index, ref }) => {
 
   return (
     <div 
-    className={`py-10 font-light tracking-wider text-2xl sm:text-3xl tab:text-4xl px-2 border-[#4F4D4A] border-b ${index === 0 && 'border-t'} flex flex-col`} 
+    className={`py-5 sm:py-10 font-light tracking-wider text-lg sm:text-2xl tab:text-4xl px-2 border-[#4F4D4A] border-b ${index === 0 && 'border-t'} flex flex-col`} 
     // key={index}
     >
       <div 
@@ -50,7 +50,7 @@ const Quest = ({ item, index, ref }) => {
             item.question
           }
         </h1>
-        <div className="plus group w-[32px] h-[32px] relative circle">
+        <div className="plus group w-[25px] h-[25px] xs:w-[32px] xs:h-[32px] relative circle">
           <div className='absolute top-0 left-[45%] h-full w-1 bg-white group-hover:bg-yellow-500 shadow-white shadow-lg duration-200 transition-colors rounded vertical' ref={rotateElement1Ref}/>
           <div className='absolute top-[45%] left-[0] w-full h-1 bg-white group-hover:bg-yellow-500 shadow-white shadow-lg duration-200 transition-colors rounded horizontal' ref={rotateElement2Ref}/>
         </div>
