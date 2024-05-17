@@ -7,8 +7,8 @@ import Button from './ui/button';
 
 const Hero = () => {
   return (
-    <div className={`text-2xl text-white font-bold px-5 pt-36 pb-20 ${londrina.className} max-w-7xl mx-auto flex flex-col lg:flex-row lg:justify-between lg:space-x-6 space-y-20 lg:space-y-0`}>
-      <div className="text-3xl xs:text-5xl sm:text-7xl uppercase max-w-2xl lg:max-w-full lg:w-3/5">
+    <div className={`text-2xl text-white font-bold px-5 pt-36 pb-10 xs:pb-28 ${londrina.className} max-w-3xl tab:max-w-5xl mx-auto flex flex-col lg:flex-row lg:justify-between lg:gap-x-6 gap-y-12`}>
+      <div className="text-4xl xs:text-5xl md:text-6xl uppercase max-w-lg md:max-w-2xl lg:max-w-full lg:w-3/5">
         <p className='leading-none tracking-wider'>
           presentation-ready {" "}
           <span className={`inline-block ${londrina_solid.className}`}>
@@ -25,7 +25,7 @@ const Hero = () => {
           </span>
         </p>
       </div>
-      <div className={`max-w-lg lg:max-w-full lg:w-2/5 text-2xl ${londrina_solid.className} font-light leading-tight space-y-6`}>
+      <div className={`max-w-xs md:max-w-lg lg:max-w-full tracking-wider lg:w-2/5 text-base md:text-xl ${londrina_solid.className} font-light leading-tight space-y-6`}>
         <p className=''>
         Having launched our own startups and with 500+ successful projects on our resume, we know exactly how to make ideas shine
         </p>
