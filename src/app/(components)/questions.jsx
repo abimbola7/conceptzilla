@@ -22,8 +22,8 @@ const Questions = () => {
     })
   }, [])
   return (
-    <div className={`text-white max-w-7xl min-h-screen w-full mx-auto ${londrina_solid.className} space-y-28`}>
-      <div className='max-w-sm text-7xl tracking-wider'>
+    <div className={`px-3 text-white max-w-4xl tab:max-w-7xl min-h-screen w-full mx-auto ${londrina_solid.className} space-y-28`}>
+      <div className='max-w-xs sm:max-w-sm text-5xl md:text-7xl tracking-wider'>
         <h1>
           FREQUENTLY ASKED
             <TiArrowRightOutline className='inline-block mb-3' />

@@ -1,7 +1,7 @@
 [
   {
     "question" : "What is a concept, and what does it include?",
-    "list" : true,
+    "list" : false,
     "answer" : [
       "A concept is an idea wrapped in a design. Depending on the complexity of the product, it’s either 3-5 informational blocks (landing page), 2-5 mobile screens (mobile app), or 2 primary screens (dashboard). If to be recognized the idea requires animation — it can be added free of charge.",
       "It can be used as promo materials, you can showcase them to stakeholders and investors, and it can be easily scalable to your project MVP. It can be used by: first-time entrepreneurs, developers in need of UI design, tech professionals looking to venture out, side hustlers, founders looking for VC, designers who need a detached view, look, and everyone who could use a great design concept.",
@@ -11,21 +11,21 @@
   },
   {
     "question" : "Who is Conceptzilla",
-    "list" : true,
+    "list" : false,
     "answer" : [
       "Conceptzilla is a team of designers from Shakuro. Shakuro is a design and development agency that’s building websites and apps since 2006. This initiative is our way of giving back to the community. Having launched our own startups and with 500+ successful projects on our resume, we know exactly how to make ideas shine. The world is full of ideas that stay undiscovered. Conceptzilla is on a mission to give them wings. And drop shadows."
     ]
   },
   {
     "question" : "What's the concept for",
-    "list" : true,
+    "list" : false,
     "answer" : [
       "It can be used as a promo materials, you can showcase them to stakeholders and investors, it can be easily scalable to your project MVP. It can be used by: first-time entrepreneurs, developers in need of UI design, tech professionals looking to venture out, side hustlers, founders looking for VC, designers who need a detached view, look and everyone who could use a great design concept."
     ]
   },
   {
     "question" : "Why conceptzilla",
-    "list" : true,
+    "list" : false,
     "answer" : [
       "If you work with us, you will save time on formalities, long calls and emails typical for a design studio. The production of the same number of assets may take months that way. Our framework crystalizes the idea to just the most important features, which saves time, cost, and delivers tight concepts. An app startup design cost may reach $50,000 we can design a quick and powerful concept of the same product for $3,000."
     ]

@@ -79,9 +79,9 @@ const MouseProvider = ({ children }) => {
     >
       <div className={`flair w-5 h-5 rounded-full fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 mix-blend-difference bg-yellow-500 z-[100000] pointer-events-none text-center items-center justify-center flex ${mobileMode ? 'invisible' : 'visible'}`}>
         <span className='uppercase  font-medium transition p text-[8px]'>
-           {
-            rulesState ? "order a concept" : "i want similar"
-           }
+          {
+          rulesState ? "order a concept" : "i want similar"
+          }
         </span>
       </div>
       { children }
